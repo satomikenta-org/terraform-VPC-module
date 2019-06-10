@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source = "./vpc"
+  source = "github.com/satomikenta-org/terraform-VPC-module/blob/master/vpc"
   AWS_REGION = "${var.aws_region}"  
 }
 
